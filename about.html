@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Diabetes Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-4">
+            <h1 class="display-4">About Diabetes Predictor</h1>
+            <p class="lead">Understanding the project and its limitations</p>
+        </header>
+
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="card-title mb-0">Project Information</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4>What is this project?</h4>
+                        <p>
+                            The Diabetes Predictor is a web application that uses machine learning to estimate the risk of diabetes based on several health metrics. It uses a Random Forest classifier trained on the Pima Indians Diabetes Dataset.
+                        </p>
+
+                        <h4>How does it work?</h4>
+                        <p>
+                            The application collects health information through a form, processes this data using a pre-trained machine learning model, and provides a prediction about the risk of diabetes. The model considers factors such as glucose levels, blood pressure, BMI, and other health indicators that are known to be associated with diabetes risk.
+                        </p>
+
+                        <h4>Limitations</h4>
+                        <p>
+                            This tool is for educational purposes only and has several limitations:
+                        </p>
+                        <ul>
+                            <li>It is not a substitute for professional medical advice, diagnosis, or treatment.</li>
+                            <li>The model is trained on a specific dataset and may not generalize well to all populations.</li>
+                            <li>The prediction is based solely on the information provided and does not take into account other important health factors.</li>
+                            <li>The accuracy of the prediction depends on the accuracy of the information provided.</li>
+                        </ul>
+
+                        <h4>Data Privacy</h4>
+                        <p>
+                            All data entered into this application is processed locally and is not stored or shared with any third parties. Your health information remains private.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="{{ url_for('index') }}" class="btn btn-primary">Back to Predictor</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-5 mb-3">
+            <p>Disclaimer: This tool is for educational purposes only and should not be used as a substitute for professional medical advice.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
